@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gxh-jI-SbU">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,97 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lession3Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b04-Q4-I0I">
+                                <rect key="frame" x="20" y="164" width="280" height="71"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Bài Tập 1">
+                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigationView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="byR-x0-Ivs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1U-fV-azq">
+                                <rect key="frame" x="20" y="255" width="280" height="71"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Bài Tập 2">
+                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigationView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8sj-HI-Q3U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shl-my-liJ">
+                                <rect key="frame" x="20" y="346" width="280" height="71"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Bài Tập 3">
+                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigationView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RgB-Sq-j81"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSL-u5-xMB">
+                                <rect key="frame" x="20" y="437" width="280" height="71"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Bài Tập 4">
+                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigationView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rCQ-8E-UBE"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jSL-u5-xMB" firstAttribute="height" secondItem="Shl-my-liJ" secondAttribute="height" id="2vW-rx-mkc"/>
+                            <constraint firstItem="Z1U-fV-azq" firstAttribute="centerX" secondItem="b04-Q4-I0I" secondAttribute="centerX" id="4go-Rc-DrU"/>
+                            <constraint firstItem="Z1U-fV-azq" firstAttribute="height" secondItem="b04-Q4-I0I" secondAttribute="height" id="8Ji-zW-8kC"/>
+                            <constraint firstItem="jSL-u5-xMB" firstAttribute="top" secondItem="Shl-my-liJ" secondAttribute="bottom" constant="20" id="8Qc-ac-1Ea"/>
+                            <constraint firstItem="jSL-u5-xMB" firstAttribute="centerX" secondItem="Shl-my-liJ" secondAttribute="centerX" id="9oq-cq-UA4"/>
+                            <constraint firstItem="Shl-my-liJ" firstAttribute="width" secondItem="Z1U-fV-azq" secondAttribute="width" id="AZs-zU-Dsk"/>
+                            <constraint firstItem="b04-Q4-I0I" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NBe-JW-LyG"/>
+                            <constraint firstItem="b04-Q4-I0I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="VBe-Tu-7jN"/>
+                            <constraint firstItem="b04-Q4-I0I" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:8" id="YtN-JY-a4w"/>
+                            <constraint firstItem="jSL-u5-xMB" firstAttribute="width" secondItem="Shl-my-liJ" secondAttribute="width" id="bhC-LS-CVv"/>
+                            <constraint firstItem="Z1U-fV-azq" firstAttribute="width" secondItem="b04-Q4-I0I" secondAttribute="width" id="fSi-1I-ejT"/>
+                            <constraint firstItem="Shl-my-liJ" firstAttribute="height" secondItem="Z1U-fV-azq" secondAttribute="height" id="izo-bz-Vyi"/>
+                            <constraint firstItem="Z1U-fV-azq" firstAttribute="top" secondItem="b04-Q4-I0I" secondAttribute="bottom" constant="20" id="kmb-Sa-Toy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b04-Q4-I0I" secondAttribute="trailing" constant="20" id="stm-In-d2Q"/>
+                            <constraint firstItem="Shl-my-liJ" firstAttribute="top" secondItem="Z1U-fV-azq" secondAttribute="bottom" constant="20" id="tQB-62-T7F"/>
+                            <constraint firstItem="Shl-my-liJ" firstAttribute="centerX" secondItem="Z1U-fV-azq" secondAttribute="centerX" id="vkf-Xs-anG"/>
+                            <constraint firstItem="b04-Q4-I0I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yUm-QG-DTR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kU3-Dk-nDa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1042.5" y="35.91549295774648"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lg1-Td-Yca">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gxh-jI-SbU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Ze-ZV-IcN">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HfY-kh-Qzw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Sy-C1-VBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="-678.16901408450701"/>
         </scene>
     </scenes>
 </document>

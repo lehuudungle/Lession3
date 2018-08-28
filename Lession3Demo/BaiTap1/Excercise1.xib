@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Excercise1" customModule="Lession3Demo" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCt-Fd-CPg">
+                    <rect key="frame" x="37.5" y="120" width="300" height="133.5"/>
+                    <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="6bC-0a-Yhx"/>
+                    </constraints>
+                    <state key="normal" title="Bang giao dien">
+                        <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="navigationView:" destination="-1" eventType="touchUpInside" id="UDZ-uA-aXA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Etf-vZ-EEF">
+                    <rect key="frame" x="37" y="308" width="300" height="133.5"/>
+                    <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="v55-5r-bwA"/>
+                    </constraints>
+                    <state key="normal" title="Bang code">
+                        <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="navigationView:" destination="-1" eventType="touchUpInside" id="tE4-he-lqL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Etf-vZ-EEF" firstAttribute="height" secondItem="hCt-Fd-CPg" secondAttribute="height" id="00p-p5-KKU"/>
+                <constraint firstItem="hCt-Fd-CPg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="Abk-cn-FFL"/>
+                <constraint firstItem="Etf-vZ-EEF" firstAttribute="centerX" secondItem="hCt-Fd-CPg" secondAttribute="centerX" id="Q1l-UQ-87b"/>
+                <constraint firstItem="hCt-Fd-CPg" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:5" id="Qso-L4-lNc"/>
+                <constraint firstItem="Etf-vZ-EEF" firstAttribute="top" secondItem="hCt-Fd-CPg" secondAttribute="bottom" constant="54.5" id="rEU-af-O02"/>
+                <constraint firstItem="hCt-Fd-CPg" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="yyl-AP-0Zn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
